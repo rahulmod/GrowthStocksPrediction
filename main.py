@@ -69,7 +69,7 @@ def get_market_sentiment():
     url = ('https://newsapi.org/v2/everything?'
            'q=stock+market&'
            'sortBy=publishedAt&'
-           'apiKey=67de737394af42c58135609ba935e500')
+           'apiKey=xxxxxxxxxxxxxxxxxxxxxxxxxx')
 
     response = requests.get(url)
     articles = json.loads(response.text)['articles']
