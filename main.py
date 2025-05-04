@@ -84,8 +84,8 @@ def get_market_sentiment():
 
 def get_macro_economic_risks():
     # This is a simplified example. In practice, you'd want to use a more comprehensive economic data API
-    fed_url = "https://api.stlouisfed.org/fred/series/observations?series_id=FEDFUNDS&api_key=c441c6fec2eeaa578f17f5e714d7a285&file_type=json"
-    vix_url = "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=8HRR9YAUSS00V613"
+    fed_url = "https://api.stlouisfed.org/fred/series/observations?series_id=FEDFUNDS&api_key=xxxxxxxxxxxxxxxxxxxxxxx&file_type=json"
+    vix_url = "https://www.alphavantage.co/query?function=MARKET_STATUS&apikey=xxxxxxxxxxxxxxxxxxxx"
 
     fed_response = requests.get(fed_url)
     fed_rate = float(json.loads(fed_response.text)['observations'][-1]['value'])
